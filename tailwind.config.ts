@@ -8,11 +8,16 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        title:["Poppins, serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 } satisfies Config;
